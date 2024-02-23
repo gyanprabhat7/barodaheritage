@@ -1,0 +1,41 @@
+---
+import { TextSection } from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'About | Astro Odyssey Theme',
+	description: 'About Page',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>About Vadodara</h1>
+			<p>
+				Vadodara, located on the bank of the Vishwamitri River, southeast of Ahmedabad, is known for its impressive monuments, museums and gardens that dominate the historic city center.
+According to historians, the city of Vadodara is over 2000 years old. The first native people of Vadodara were a Hindu king, who ruled the city until 1297. The people of the Gupta Empire began to explore the region and became the first ruler of Vadodara at the beginning of the Christian era. After fierce battles, Vadodara was conquered by the Solanki dynasty. Years later, the city was conquered by the Mughals, who were later overthrown by the ruler Gaekwad.
+			</p>
+		</div>
+    <picture slot="image-container">
+      <img
+        src="https://cdn.tripuntold.com/media/photos/location/2018/10/19/4c662a99-924f-48af-8e71-fee54224f07f.jpg"
+        alt="Baroda"
+        id="home-hero-image"
+      />
+    </picture>
+	</HeroSection>
+  <TextSection narrow>
+    <p>
+      Vadodara owes much of its splendor to Sayajirao Gaekwad III, a formal ruler of the city. He was a great modernizer who laid the foundation for Vadodara's modern reputation as the cultural capital of Gujarat.</p>
+    <p>Today, Vadodara is known around the world as a heady mix of breathtaking art, interesting sights and vibrant street life. The Laxmi Vilas Palace, partially converted into a museum, is the best example of the Indo-Saracen architectural style. Designed by Major Charles Mant in the year 1880, the palace is the main tourist attraction of the Vadodara region. A few kilometers from the Laxmi Vilas Palace is the Maharaja Fateh Singh Museum, famous for its unique collection of paintings by the famous artist Raja Ravi Verma.</p>
+    
+    <p>
+      Take a relaxing moment by visiting the Sayaji Baugh Garden. Located in the heart of the city, the park is home to a zoo, a planetarium, and the Vadodara Museu, which has an electric mix of Mughal miniatures, royal artifacts, and European oil paintings.
+Other places worth visiting in Vadodara are Nazarbaug Palace, Makarpura Palace, Maharaja Sayajirao University of Baroda, Kirti Mandir, Kirti Stambh, Nyay Mandir, Khanderao Market, Aurobindo Ashram, EME Temple (Dakshinamurty temple) and Hazira Maqbara.</p>
+    <p>
+      A few kilometers from Vadodara is the ancient city of Champaner, also a UNESCO World Heritage Site. Located at the foot of the Pavgadh, Champaner features a citadel, a mosque, palaces and tombs, guarded by large gates. Pavgadh Fort, on the crest of the 820m-high Pavgadh Hill, is a group of an ancient fortification, reflecting the nation's checkered past.
+Sat Mahal is another famous attraction that you will notice as you climb Pavgadh fort. This grand seven-story building is an interesting example of Chauhan architecture.</p>
+  </TextSection>
+</Layout>

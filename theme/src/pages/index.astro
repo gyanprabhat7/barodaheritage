@@ -1,0 +1,106 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+	Button,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+	title: 'Cultural Heritage | Vadodara',
+	description: 'Know Your Culture',
+};
+---
+
+<AnnouncementBar text="Read Our Latest Blog Post" href="/blog/posts/remote-work-mental-health/" slot="announcement-bar"/>
+<Layout seo={seo} >
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Know Your Culture</h1>
+			<p>Everything about Baroda's cultural heritage</p>
+		</div>
+		<div slot="btns-container">
+			<Button href="/theme/get-started" customIcon
+				>Learn More <Fragment slot="icon">
+          <Icon name="ic:baseline-chevron-right"/>
+        </Fragment></Button
+			>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/04/67404-places-to-visit-in-vadodara.jpg?fit=1000%2C642&ssl=1"
+				alt="Lakshmi Vila Palace"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+
+	<CustomerQuoteSection
+		quoteText="The city of Vadodara (formerly Baroda in English and in some Indian languages other than Gujarati) stands in Central Gujarat, a region with a long history of human activity and settlement, testified by archaeological evidences dating from a couple of centuries before the Current Era."
+	/>
+
+	<ThreeColumnTextSection>
+		<div slot="column-1-body">
+			<h2>Pavagadh Fort</h2>
+			<p>
+				The earliest part of the Champaner compound, the Pavagadh fort was an important fortress of the Solanki kingdom. The walls of the fort are still standing in parts, as are parts of the earliest known Hindu temple, a Lakulisa temple dated to the 10th-11th century. Other Hindu and Jain temples dating to the 13th-15th centuries, are of the Nagara style. Champaner has several large and prominent mosques, a testament to its time of glory as the capital of Gujarat during the Mughal reign. Most date from the late 15th century.
+			</p>
+		</div>
+		<Button slot="column-1-cta">Learn More</Button>
+		<div slot="column-2-body">
+			<h2>Mosques of Champaner</h2>
+			<p>
+				Jama Masjid: The most central is the Jami Masjid, with two 30m minarets flanking the main entrance, two floors of open arcades, and detailed carvings and jaali around the pillared courtyard.
+Nagina Masjid: The Nagina Masjid, on a high plinth in front of a wide open filed, has three standing domes over the main hall, and a nearby cenotaph with impressively carved columns and niches.
+			</p>
+		</div>
+		<Button slot="column-2-cta" outlined>Learn More</Button>
+		<div slot="column-3-body">
+			<h2>Ankottaka</h2>
+			<p>
+				Now known as Akota, this site began as a small settlement among Akola trees, a kilometer west of where would later lie Vadodara. Towards the 5th century AD it was known as a center of Jainism and Jain studies. The 68 bronze statues of tirthankars recovered from the site so far are now housed in the Vadodara Museum and they provide an insight into metallic art at the time. 
+			</p>
+		</div>
+		<Button slot="column-3-cta">Learn More</Button>
+	</ThreeColumnTextSection>
+
+	<YouTubeEmbedSection url="https://www.youtube.com/watch?v=w4ra7Iuc_3U&pp=ygUadmFkb2RhcmEgY3VsdHVyYWwgaGVyaXRhZ2U%3D" rounded />
+
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>Festivals</h2>
+      <h3>Navratri</h3>
+      <p>
+        This is a festival to worship Godess Durga. It is celebrated for nine nights. ‘Gujarats’ traditional folk dance ‘Garba’ is performed by people , especially young girls and boys. They are clad in traditional costumes. People gather in big grounds to perform garba for nine nights. Professional singer troops are employed for singing Garbas. The festivals is celebrated with enthusiasm and pomp.
+      </p>
+      <h3>Uttrayan</h3>
+        <p>
+			This is celebrated on 14th of January every year. People go to terraces early in the morning and fly kites throughout the day. In the evening, people party, dance and enjoy.
+      </p>
+
+    </div>
+     <picture slot="image-container">
+      <img
+        src="https://www.gujarattourism.com/content/dam/gujrattourism/images/home_page/Navratri.jpg"
+        alt="Astro Odyssey"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+
+  <CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
+    <h2>Plan Your Trip To Vadodara</h2>
+    <p>It only takes a couple clicks to book your dream trip to Baroda.</p>
+    <Button href="https://www.makemytrip.com/tripideas/heritage-vadodara" customIcon>Learn More<Fragment slot="icon">
+      <Icon name="ic:baseline-chevron-right"/>
+    </Fragment></Button>
+  </CtaCardSection>
+
+</Layout>
+
