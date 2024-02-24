@@ -17,6 +17,9 @@ const seo = {
 	description: 'Know Your Culture',
 };
 ---
+<head>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
 
 <AnnouncementBar text="Read Our Latest Blog Post" href="/blog/posts/remote-work-mental-health/" slot="announcement-bar"/>
 <Layout seo={seo} >
@@ -102,5 +105,27 @@ Nagina Masjid: The Nagina Masjid, on a high plinth in front of a wide open filed
     </Fragment></Button>
   </CtaCardSection>
 
+
+
+  
+
 </Layout>
 
+<script>
+
+	declare global {
+		interface Window {
+			netlifyIndentity: any;
+		}
+	}
+
+	if (window.netlifyIdentity) {
+	  window.netlifyIdentity.on("init", (user: any) => {
+		if (!user) {
+		  window.netlifyIdentity.on("login", () => {
+			document.location.href = "/admin/";
+		  });
+		}
+	  });
+	}
+  </script>
