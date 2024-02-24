@@ -27,18 +27,18 @@ const posts = await Astro.glob('./posts/*.mdx').then(posts =>
 );
 
 const seo = {
-	title: 'Blog | Astro Odyssey Theme',
-	description: 'Astro Odyssey Theme Blog Page',
+	title: 'Posts | Baroda Heritage',
+	description: 'Latest posts on Baroda Heritage',
 };
 ---
 
 <Layout {seo}>
 	<Container>
 		<TextCardSection>
-			<h1>Odyssey Blog</h1>
+			<h1>Baroda Posts</h1>
 			<p>
-				View our blog to stay up to date on the latest news about our business.
-				Want to be the first to hear about a new blog post? Join our newsletter!
+				View our post to stay up to date on the latest news about Vadodara.
+				Want to be the first to hear about a new post? Join our newsletter!
 			</p>
 			<NewsletterForm />
 		</TextCardSection>
